@@ -1,1 +1,1 @@
-# PLSQL
+#### PL/SQL (acrónimo para a expressão inglesa Procedural Language/Structured Query Language) é uma extensão da linguagem padrão SQL para o SGBD Oracle da Oracle Corporation. É uma linguagem procedural da Oracle que estende a linguagem SQL. Permite que a manipulação de dados seja incluída em unidades de programas.

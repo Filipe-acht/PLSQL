@@ -1,0 +1,19 @@
+MÉTODOS DE COLLECTIONS:
+						* EXISTS(n) -> retorna true se existir, se aplica para todas as collections;
+						* COUNT  -> retorna o número de elementos, se aplica para todas as collections;
+						* FIRST  -> retorna o primeiro número do indice, null se a collection estiver vazia, se aplica para todas as collections;
+						* LAST	 -> retorna o último número do indice, null se a collection estiver vazia, se aplica para todas as collections;
+						* LIMIT  -> retorna o maior possível do indice, apenas para VARRAY;
+						* PRIOR(n)  -> retorna o número do indice anterior a n, se aplica a todas as collections; 
+						* NEXT(n)	-> retorna o número posterior a n, se aplica a todas as collections;
+						* EXTEND(n)	-> para aumentar o tamanho e se aplica apenas para NESTED TABLE ou VARRAY:
+									* EXTEND 	- adiciona um elemento nulo;
+									* EXTEND(n)	- adiciona n elemento nulo;
+									* EXTEND(n, i) - adiciona n cópias do elemento i.
+						* TRIM: se aplica apenas para NESTED TABLE
+								* TRIM - remove um elemento do final da Collection;
+								* TRIM(n) - remove n elementos do final da Collection.
+						* DELETE: se aplica apenas para ASSOCIATIVE ARRAY ou NESTED TABLE
+								* DELETE - remove todos os elementos de uma Collection;
+								* DELETE(n) - remove o elemento n da Collection;
+								* DELETE(m, n) - remove todos os elementos na faixa de m  a n da Collection.

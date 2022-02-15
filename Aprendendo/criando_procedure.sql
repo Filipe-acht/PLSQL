@@ -44,7 +44,7 @@ BEGIN
     , pmanager_id
     , pdepartment_id
     );
-/* não faz commit, pois deixa a cargo do programa chamado */
+/* não faz commit, pois deixa a cargo do programa chamador */
 EXCEPTION
     WHEN OTHERS THEN
         RAISE_APPLICATION_ERROR(-20001, 'Erro Oracle ' || SQLCODE || SQLERRM);

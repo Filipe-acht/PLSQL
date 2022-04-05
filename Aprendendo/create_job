@@ -2,7 +2,7 @@ BEGIN
   DBMS_SCHEDULER.CREATE_JOB (
    job_name           =>  'JOB_ATUALIZA_CONTROLE_PONTO',
    job_type           =>  'STORED_PROCEDURE',
-   job_action         =>  'filipesoares.pkg_rh_custom.p_job_controle_ponto',
+   job_action         =>  '<owner>.pkg_rh_custom.p_job_controle_ponto',
    start_date         =>  to_date('15/03/2022 00:01:00','DD/MM/YYYY HH24:MI:SS'),
    repeat_interval    =>  'FREQ=WEEKLY;INTERVAL=1',
    auto_drop          =>   FALSE,

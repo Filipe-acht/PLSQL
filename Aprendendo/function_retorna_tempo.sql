@@ -322,3 +322,8 @@ BEGIN
   Return vRetorno;
 
 END fnc_retorna_tempo;
+
+/* Executando:
+ SELECT <owner>.fnc_retorna_tempo(to_date('01/09/2021', 'DD/MM/YYYY'), 'a A m M d D h H mi MI', sysdate) as tempo
+ FROM dual;
+*/
